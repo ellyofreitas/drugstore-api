@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+
+  "configurations": [
+    {
+      "name": "server",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/index.ts",
+      "runtimeExecutable": "tsx",
+      "outputCapture": "std",
+      "restart": true,
+      "runtimeArgs": [
+        "--enable-source-maps",
+        "--watch",
+        "--env-file=.env"
+      ],
+      "envFile": "${workspaceFolder}/.env",
+      "sourceMaps": true,
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/node_modules/**"
+      ]
+    }
+  ]
+}

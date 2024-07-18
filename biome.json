@@ -1,0 +1,76 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.7.3/schema.json",
+  "files": {
+    "ignore": ["dist", "src/infra/fastify/graphql/generated.ts"]
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git"
+  },
+  "json": {
+    "formatter": {
+      "enabled": true
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "single",
+      "semicolons": "always"
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "indentWidth": 2,
+    "indentStyle": "space"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "off"
+      },
+      "correctness": {
+        "noUnusedImports": "warn",
+        "noUnusedVariables": "warn",
+        "noUnusedLabels": "warn",
+        "noUnusedPrivateClassMembers": "warn"
+      },
+      "style": {
+        "noArguments": "warn",
+        "noCommaOperator": "warn",
+        "noInferrableTypes": "warn",
+        "noNonNullAssertion": "off",
+        "noParameterAssign": "warn",
+        "noUnusedTemplateLiteral": "warn",
+        "noUselessElse": "warn",
+        "noVar": "warn",
+        "useAsConstAssertion": "warn",
+        "useConst": "warn",
+        "useDefaultParameterLast": "warn",
+        "useEnumInitializers": "warn",
+        "useExponentiationOperator": "warn",
+        "useExportType": "warn",
+        "useImportType": "warn",
+        "useLiteralEnumMembers": "warn",
+        "useNodejsImportProtocol": "warn",
+        "useNumberNamespace": "warn",
+        "useNumericLiterals": "warn",
+        "useSelfClosingElements": "warn",
+        "useShorthandFunctionType": "warn",
+        "useSingleVarDeclarator": "warn",
+        "useTemplate": "warn",
+        "useWhile": "warn"
+      },
+      "complexity": {
+        "noStaticOnlyClass": "off",
+        "noBannedTypes": "off",
+        "noThisInStatic": "off"
+      }
+    }
+  }
+}
